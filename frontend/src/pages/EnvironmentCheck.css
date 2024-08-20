@@ -1,0 +1,70 @@
+/* EnvironmentCheck.css */
+
+.environment-check-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9; /* Light grey background */
+    text-align: center;
+  }
+  
+  .environment-check-heading {
+    color: #2c3e50; /* Dark blue color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .environment-check-error {
+    color: #e74c3c; /* Red color for error messages */
+    margin-bottom: 20px;
+  }
+  
+  .camera-preview-container {
+    margin-bottom: 20px;
+  }
+  
+  .camera-preview {
+    border: 2px solid #2c3e50; /* Dark blue border around the video */
+    border-radius: 8px;
+  }
+  
+  .camera-instructions {
+    color: #34495e; /* Darker grey for camera instructions */
+    margin-top: 10px;
+  }
+  
+  .test-instructions {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .test-instructions h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .test-instructions ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #7f8c8d; /* Grey color for list items */
+  }
+  
+  .proceed-button {
+    background-color: #27ae60; /* Green background for the proceed button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .proceed-button:disabled {
+    background-color: #95a5a6; /* Grey out the button when disabled */
+    cursor: not-allowed;
+  }
+  
+  .proceed-button:hover:enabled {
+    background-color: #219150; /* Darker green on hover */
+  }
+  

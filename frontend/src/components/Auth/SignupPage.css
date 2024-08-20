@@ -1,0 +1,81 @@
+/* SignupPage.css */
+
+.signup-body {
+    background-color: #2c3e50; /* Dark blue background for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-container {
+    background-color: #ecf0f1; /* Light grey background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .signup-heading {
+    color: #2c3e50; /* Dark text for contrast */
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-input {
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .signup-input:focus {
+    border-color: #e74c3c; /* Red border when input is focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+  }
+  
+  .signup-button {
+    background-color: #e67e22; /* Orange background for the button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+  }
+  
+  .signup-prompt {
+    margin-top: 20px;
+    color: #ecf0f1;
+  }
+  
+  .signup-link {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-message {
+    color: #e74c3c; /* Bright red for error messages */
+    margin-top: 10px;
+  }
+  

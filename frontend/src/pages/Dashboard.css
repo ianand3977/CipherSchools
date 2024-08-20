@@ -1,0 +1,62 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9; /* Light grey background for the dashboard */
+  }
+  
+  .dashboard-greeting {
+    color: #2c3e50; /* Dark blue color for the greeting */
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-subheading {
+    color: #34495e; /* Darker blue for the subheading */
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-test-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-test-item {
+    background-color: #ffffff; /* White background for each test item */
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-test-title {
+    color: #2c3e50; /* Dark blue color for test titles */
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-test-description {
+    color: #7f8c8d; /* Grey color for test descriptions */
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-test-info {
+    color: #95a5a6; /* Light grey color for test info */
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-start-button {
+    background-color: #27ae60; /* Green background for the start button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-start-button:hover {
+    background-color: #219150; /* Darker green on hover */
+  }
+  

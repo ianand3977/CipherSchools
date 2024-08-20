@@ -1,0 +1,115 @@
+/* TestInterface.css */
+
+.test-interface-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .camera-timer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .question-container {
+    background-color: #ffffff; /* White background for the question area */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-heading {
+    color: #2c3e50; /* Dark blue color for headings */
+    margin-bottom: 10px;
+  }
+  
+  .question-text {
+    color: #34495e; /* Dark grey color for the question text */
+    margin-bottom: 20px;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-item {
+    margin-bottom: 10px;
+  }
+  
+  .option-item input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .navigation-buttons {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navigation-buttons button {
+    background-color: #27ae60; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #219150; /* Darker green on hover */
+  }
+  
+  .navigation-buttons button:disabled {
+    background-color: #bdc3c7; /* Grey out button when disabled */
+    cursor: not-allowed;
+  }
+  
+  .questions-palette {
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .questions-palette h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .palette-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .palette-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .answered {
+    background-color: #4caf50; /* Green for answered questions */
+  }
+  
+  .unanswered {
+    background-color: #f44336; /* Red for unanswered questions */
+  }
+  
