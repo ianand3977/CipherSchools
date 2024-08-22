@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# CipherSchools Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This platform allows users to sign up, log in, take tests, and receive scores via email. Below are the steps to run the application and the email template used to send test results.
 
-## Available Scripts
+ # Test user Credentials 
+ 
+ -**Email**: anandpatil3054@gmail.com
+ 
+ -**Password**: user@123
 
-In the project directory, you can run:
+## Else you can sign up with your email id for which verify the email via the link you will  have recieved after successfull signup and then login with the credentials
 
-### `npm start`
+## Running the Application
+To run the application, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Start the Backend Server
+Navigate to the backend directory and install the necessary dependencies. Then, start the server:
+### start the backend server
+`cd backend`
+`npm install`
+`node server.js`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Start the Frontend
+Navigate to the frontend directory, install the necessary dependencies, and start the frontend application:
+### start the frontend
+`cd frontend`
+`npm install`
+`npm start`
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Email Template for Sending Test Results
+The following email template is used to send test results to users:
 
-### `npm run build`
+![image](https://github.com/user-attachments/assets/f26f64e2-ccc1-41fd-9968-23153dc6bc75)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This template is dynamically populated with the user's name, test title, submission date, total number of questions, and score.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/user-attachments/assets/44dcd117-f873-4524-82b4-3ade1bb7eab1)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
