@@ -1,0 +1,79 @@
+/* Apply flexbox to the body to center the container */
+.loginContainerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  /* Style the container */
+  .loginContainer {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .loginHeading {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginInput {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .loginInput:focus {
+    border-color: #007BFF; /* Bright blue border when input is focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .loginButton {
+    background-color: #28a745; /* Fresh green background for the button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .loginButton:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .loginErrorMessage {
+    color: #dc3545; /* Bright red for error messages */
+    margin-top: 10px;
+  }
+  
+  .loginSignupPrompt {
+    margin-top: 20px;
+    color: #555555;
+  }
+  
+  .loginSignupLink {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .loginSignupLink:hover {
+    text-decoration: underline;
+  }
+  

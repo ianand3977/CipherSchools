@@ -37,9 +37,19 @@ const Dashboard = () => {
     navigate(`/environment-check/${testId}`); // Pass the test ID to the environment check page
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    navigate('/login');
+  };
+
   return (
     <div className="dashboard-container">
-      <h1 className="dashboard-greeting">Hello, {userName}!</h1>
+      <header className="dashboard-header">
+        <h1 className="dashboard-greeting">Hello, {userName}!</h1>
+        <button className="dashboard-logout-button" onClick={handleLogout}>
+          Logout
+        </button>
+      </header>
       <h2 className="dashboard-subheading">Available Tests:</h2>
       <ul className="dashboard-test-list">
         {tests.map(test => (

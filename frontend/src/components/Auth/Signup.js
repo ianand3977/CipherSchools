@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signupUser } from '../../utils/api';
-import './SignupPage.css';  // Importing the Signup CSS file
+import styles from './SignupPage.module.css';  // Importing the Signup CSS module
 
 function Signup() {
   const [name, setName] = useState('');
@@ -36,39 +36,41 @@ function Signup() {
   };
 
   return (
-    <div className="signup-container">
-      <h2 className="signup-heading">Signup</h2>
-      {message && <p className="signup-message" style={{ color: 'green' }}>{message}</p>}
-      <form className="signup-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className="signup-input"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Name"
-          required
-        />
-        <input
-          type="email"
-          className="signup-input"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        <input
-          type="password"
-          className="signup-input"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          required
-        />
-        <button type="submit" className="signup-button">Signup</button>
-      </form>
-      <p className="signup-prompt">
-        Already have an account? <a href="/login" className="signup-link">Login here</a>
-      </p>
+    <div className={styles.signupContainerWrapper}>
+      <div className={styles.signupContainer}>
+        <h2 className={styles.signupHeading}>Signup</h2>
+        {message && <p className={styles.signupMessage}>{message}</p>}
+        <form className={styles.signupForm} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className={styles.signupInput}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            className={styles.signupInput}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            className={styles.signupInput}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            required
+          />
+          <button type="submit" className={styles.signupButton}>Signup</button>
+        </form>
+        <p className={styles.signupPrompt}>
+          Already have an account? <a href="/login" className={styles.signupLink}>Login here</a>
+        </p>
+      </div>
     </div>
   );
 }

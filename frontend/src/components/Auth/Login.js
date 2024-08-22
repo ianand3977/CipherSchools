@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { loginUser } from '../../utils/api';
-import './LoginPage.css';  // Importing the CSS file
+import styles from './LoginPage.module.css';  // Importing the CSS module
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -29,31 +29,33 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <h2 className="login-heading">Login</h2>
-      <form className="login-form" onSubmit={handleSubmit}>
-        <input
-          type="email"
-          className="login-input"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        <input
-          type="password"
-          className="login-input"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          required
-        />
-        <button type="submit" className="login-button">Login</button>
-      </form>
-      {error && <p className="login-error-message">{error}</p>}
-      <p className="login-signup-prompt">
-        Don't have an account yet? <a href="/signup" className="login-signup-link">Create Account</a>
-      </p>
+    <div className={styles.loginContainerWrapper}>
+      <div className={styles.loginContainer}>
+        <h2 className={styles.loginHeading}>Login</h2>
+        <form className={styles.loginForm} onSubmit={handleSubmit}>
+          <input
+            type="email"
+            className={styles.loginInput}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            className={styles.loginInput}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            required
+          />
+          <button type="submit" className={styles.loginButton}>Login</button>
+        </form>
+        {error && <p className={styles.loginErrorMessage}>{error}</p>}
+        <p className={styles.loginSignupPrompt}>
+          Don't have an account yet? <a href="/signup" className={styles.loginSignupLink}>Create Account</a>
+        </p>
+      </div>
     </div>
   );
 }
