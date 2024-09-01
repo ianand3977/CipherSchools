@@ -93,7 +93,7 @@ const handleSubmitTest = async () => {
   return (
     <div style={{ position: 'relative', padding: '20px' }}>
       <CameraFeed />
-      <Timer initialTime={600} onTimeUp={handleTimeUp} />
+      <Timer initialTime={1800} onTimeUp={handleTimeUp} />
       <h2>
         Question {currentQuestionIdx + 1} of {questions.length}
       </h2>
